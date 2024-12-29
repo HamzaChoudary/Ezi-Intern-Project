@@ -1,7 +1,16 @@
-export default function App() {
+
+// Import file path 
+import  Footer  from "./Components/Footer/footer";
+import Nav from "./Components/Nav/Nav";
+
+function App() {
+
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <Nav />
+      <Footer />
+    </div>
   )
 }
+
+export default App;
