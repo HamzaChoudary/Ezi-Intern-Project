@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link, useLocation } from "react-router-dom";
 
-
 // Pages
 import Home from "../Hero/Hero.jsx";
-import About from "../About/About.jsx";
+import About from "../../Components/About/about.jsx";
 import Work from "../Work/work.jsx";
 import Blog from "../Blog/blog.jsx";
 import Contact from "../Contact/contact.jsx";
@@ -39,8 +38,6 @@ const NavContent = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
-
   // Navbar links with active state styling
   const navLinks = [
     { name: "Home", path: "/" },
@@ -58,16 +55,16 @@ const NavContent = () => {
           isScrolled ? "bg-white text-black shadow-lg" : "bg-transparent text-white"
         }`}
       >
-        <div className="flex justify-between  text-xl items-center text-center px-4 lg:px-8 py-3 mt-6">
+        <div className="flex justify-between items-center px-4 lg:px-8 py-3">
           {/* Logo Section */}
-          <div className="cursor-pointer px-56 ">
+          <div className="cursor-pointer">
             <h1 className="font-bold text-3xl leading-relaxed tracking-wider">
               a<span className="text-red-700 font-semibold">v</span>o
             </h1>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-10 px-72">
+          <div className="hidden lg:flex space-x-10">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -105,14 +102,14 @@ const NavContent = () => {
           </div>
         )}
       </div>
-  </div>
+    </div>
   );
 };
 
 const Nav = () => (
   <Router>
     <NavContent />
-    <div className="mt-screen"> {/* Pushes content below the hero section */}
+    <div className="mt-0"> {/* Adjust margin-top to avoid overlapping */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
