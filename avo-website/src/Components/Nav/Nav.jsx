@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Routes, Link, useLocation } from "react
 
 
 // Pages
-import Home from "../Hero/Hero";
-import About from "../About/About";
-import Work from "../Work/Work";
-import Blog from "../Blog/blog";
-import Contact from "../Contact/contact";
+import Home from "../Hero/Hero.jsx";
+import About from "../About/About.jsx";
+import Work from "../Work/work.jsx";
+import Blog from "../Blog/blog.jsx";
+import Contact from "../Contact/contact.jsx";
 
 // Icons
 import { FaBars, FaTimes } from "react-icons/fa";
