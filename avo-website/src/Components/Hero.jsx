@@ -139,12 +139,12 @@ const Hero = () => {
   {/* Overlay Text */}
   <div className="absolute w-full h-full flex items-center justify-center text-white px-6">
     <motion.div
-      className="flex flex-col justify-center space-y-4 px-6 md:px-16 lg:px-52"
+      className="flex flex-col justify-center space-y-4 px-6 md:px-16 lg:pl-56 lg:pr-48"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4">
+      <h1 className="text-3xl sm:text-3xl lg:text-6xl font-bold mb-4">
         We Create Modern & Minimal Websites
       </h1>
       <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-300 mb-6">
