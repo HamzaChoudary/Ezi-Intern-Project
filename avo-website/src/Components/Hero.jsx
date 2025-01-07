@@ -127,7 +127,7 @@ const Hero = () => {
  {/* Hero Section */}
 <div id='Home' className="relative h-screen">
   <div
-    className="absolute top-0 w-full h-full "
+    className="absolute -top-20 w-full h-full "
     style={{
       clipPath: "polygon(0% 0%, 100% 0%, 100% 85%, 65% 100%, 0% 90%)",
       backgroundImage: `url(${currentImage})`,
@@ -217,9 +217,9 @@ const Hero = () => {
 </div>
 
 {/* 2nd 3 columns */}
-<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-6 sm:mx-16 lg:mx-36 justify-items-center'>
+<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-6 sm:mx-16 lg:mx-36 gap-x-8 justify-items-center'>
   {/* first col */}
-  <motion.div className='text-end pr-8'
+  <motion.div className='text-end'
     initial={{ y: 100, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -323,6 +323,7 @@ const Hero = () => {
     </p>
   </motion.div>
 </div>
+
    {/* OUR WORKS */}
 <div className="relative w-full min-h-[150vh] flex justify-center mt-40">
   {/* Polygon Background */}
@@ -452,7 +453,7 @@ const Hero = () => {
     src={Back1} alt="Background-image" 
   />
   
-  <div className="absolute inset-0 flex flex-col items-start justify-center px-6 sm:px-16 md:px-20 w-2/3 gap-y-2 pl-10 sm:pl-20">
+  <div className="absolute inset-0 flex flex-col items-start justify-center px-6  sm:px-16 md:px-32 w-2/3 gap-y-2 pl-10 sm:pl-20 ">
     <h2 className="text-red-700 text-lg sm:text-xl">Get Started</h2>
     <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-semibold leading-relaxed pr-20">
       Fill in the brief and get the project estimate
