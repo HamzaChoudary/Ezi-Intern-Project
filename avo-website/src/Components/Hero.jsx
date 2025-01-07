@@ -144,13 +144,13 @@ const Hero = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <h1 className="text-2xl sm:text-3xl lg:text-6xl font-bold mb-4">
+      <h1 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-4">
         We Create Modern & Minimal Websites
       </h1>
       <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-300 mb-6">
         A small river named Duden flows by their place and supplies it with the necessary regelialia.
       </p>
-      <button className="bg-red-600 w-fit text-white px-6 py-3 sm:px-8 sm:py-4 text-lg sm:text-xl rounded-lg transition">
+      <button className="bg-red-600 w-fit text-white h-[1000px] px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg rounded-lg transition">
         {currentImage === Bgpicture1 ? "Start Project" : "Explore Projects"}
       </button>
     </motion.div>
