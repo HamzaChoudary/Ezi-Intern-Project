@@ -127,7 +127,7 @@ const Hero = () => {
  {/* Hero Section */}
 <div id='Home' className="relative h-screen">
   <div
-    className="absolute -top-20 w-full h-[1000px] "
+    className="absolute -top-20 w-full h-[900px] "
     style={{
       clipPath: "polygon(0% 0%, 100% 0%, 100% 85%, 65% 100%, 0% 90%)",
       backgroundImage: `url(${currentImage})`,
