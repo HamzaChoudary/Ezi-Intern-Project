@@ -139,7 +139,7 @@ const Hero = () => {
   {/* Overlay Text */}
   <div className="absolute w-full h-full flex items-center justify-center text-white px-6">
     <motion.div
-      className="flex flex-col justify-center space-y-4 px-6 md:px-16 lg:pl-56 lg:pr-48"
+      className="flex flex-col justify-center space-y-4 px-6 md:px-16 lg:pl-56 "
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
