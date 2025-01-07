@@ -127,7 +127,7 @@ const Hero = () => {
  {/* Hero Section */}
 <div id='Home' className="relative h-screen">
   <div
-    className="absolute -top-20 w-full h-full "
+    className="absolute -top-20 w-full h-[1000px] "
     style={{
       clipPath: "polygon(0% 0%, 100% 0%, 100% 85%, 65% 100%, 0% 90%)",
       backgroundImage: `url(${currentImage})`,
@@ -139,18 +139,18 @@ const Hero = () => {
   {/* Overlay Text */}
   <div className="absolute w-full h-full flex items-center justify-center text-white px-6">
     <motion.div
-      className="flex flex-col justify-center space-y-4 px-6 md:px-16 lg:pl-56 "
+      className="flex flex-col justify-center space-y-4 px-6 md:px-16 lg:pl-48 "
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <h1 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-4">
+      <h1 className="text-xl sm:text-2xl lg:text-5xl font-bold mb-4">
         We Create Modern & Minimal Websites
       </h1>
       <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-300 mb-6">
         A small river named Duden flows by their place and supplies it with the necessary regelialia.
       </p>
-      <button className="bg-red-600 w-fit text-white h-[1000px] px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg rounded-lg transition">
+      <button className="bg-red-600 w-fit text-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg rounded-lg transition">
         {currentImage === Bgpicture1 ? "Start Project" : "Explore Projects"}
       </button>
     </motion.div>
