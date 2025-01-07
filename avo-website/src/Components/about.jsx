@@ -16,7 +16,7 @@ import { FaFacebookF } from "react-icons/fa";
 // Image 
 import Image from "./assets/about.jpg";
 import Bigpicture2 from './assets/bg_2.jpg';
-import Back1 from './assets/bg_1.jpg';
+// import Back1 from './assets/bg_1.jpg';
 import Person1 from './assets/Person_1.jpg';
 import Person2 from './assets/Person_2.jpg';
 import Person3 from './assets/Person_3.jpg';
