@@ -144,7 +144,7 @@ const Hero = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <h1 className="text-3xl sm:text-3xl lg:text-6xl font-bold mb-4">
+      <h1 className="text-2xl sm:text-3xl lg:text-6xl font-bold mb-4">
         We Create Modern & Minimal Websites
       </h1>
       <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-300 mb-6">
